@@ -1,0 +1,12 @@
+name: Python construction
+
+on:
+    push:
+        branches: ["main"]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hacer checkout del proyecto
+              uses: actions/checkout@v4
